@@ -14,6 +14,8 @@ describe "Merchants API" do
     expect(merchants.count).to eq(4)
 
     merchants.each do |merchant|
+      expect(merchant).to have_key(:id)
+      expect(merchant[:id]).to be_a(Integer)
       expect(merchant).to have_key(:name)
       expect(merchant[:name]).to be_a(String)
     end
