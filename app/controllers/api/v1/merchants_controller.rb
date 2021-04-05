@@ -13,18 +13,20 @@ class Api::V1::MerchantsController < ApplicationController
   private
 
   def per_page
-    if params[:limit]
-      params[:limit]
+    if params[:per_page]
+      params[:per_page]
     else
       20
     end
   end
 
   def page_offset
-    if params[:page_number]
-      (params[:page_number].to_i - 1) * per_page.to_i
-    else
+    if !params[:page]
       nil
+    elsif params[:page].to_i <= 0
+      0
+    else
+      (params[:page].to_i - 1) * per_page.to_i
     end
   end
 

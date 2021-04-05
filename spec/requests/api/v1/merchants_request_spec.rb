@@ -26,7 +26,7 @@ describe "Merchants API" do
 
   it "returns a subset of merchants based on limit" do
     create_list(:merchant, 35)
-    get '/api/v1/merchants', params: {limit: 15 }
+    get '/api/v1/merchants', params: {per_page: 15 }
     expect(response).to be_successful
     merchants = JSON.parse(response.body, symbolize_names: true)
     expect(merchants[:data].count).to eq(15)
@@ -34,7 +34,7 @@ describe "Merchants API" do
 
   it "returns a subset of merchants based on limit and offset" do
     create_list(:merchant, 35)
-    get '/api/v1/merchants', params: {limit: 20, page_number: 2 }
+    get '/api/v1/merchants', params: {per_page: 20, page: 2 }
     expect(response).to be_successful
     merchants = JSON.parse(response.body, symbolize_names: true)
     expect(merchants[:data].count).to eq(15)
@@ -43,11 +43,14 @@ describe "Merchants API" do
   it "has a default limit of 20" do
     expect(Merchant).to receive(:limit).with(20).and_call_original
 
-
     get '/api/v1/merchants'
-
-
   end
+
+  # it "won't take a page with value less than one" do
+  #   expect(Merchant).to receive(:offset).with(0).and_call_original
+  #   get '/api/v1/merchants', params: {page: -1 }
+  #
+  # end
 
   it "can get one merchant by its id" do
     id = create(:merchant).id
