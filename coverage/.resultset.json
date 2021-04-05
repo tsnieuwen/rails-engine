@@ -223,7 +223,7 @@
           1,
           1,
           1,
-          6,
+          76,
           null,
           null,
           null
@@ -255,6 +255,10 @@
           1,
           1,
           null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -270,11 +274,31 @@
           1,
           null,
           1,
-          1,
+          4,
+          null,
+          4,
           null,
           null,
           1,
           1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          3,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          4,
+          1,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -285,8 +309,17 @@
           1,
           null
         ]
+      },
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/serializers/merchant_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1617652287
+    "timestamp": 1617661921
   }
 }
