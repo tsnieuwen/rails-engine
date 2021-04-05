@@ -209,9 +209,9 @@
           1,
           1,
           1,
-          8,
-          8,
-          8,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -223,7 +223,7 @@
           1,
           1,
           1,
-          10,
+          6,
           null,
           null,
           null
@@ -245,10 +245,12 @@
           null
         ]
       },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/item.rb": {
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/merchant.rb": {
         "lines": [
           1,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -263,20 +265,7 @@
           null
         ]
       },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/merchant.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/items_controller.rb": {
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/merchants_controller.rb": {
         "lines": [
           1,
           null,
@@ -287,23 +276,6 @@
           1,
           1,
           null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
           null,
           null
         ]
@@ -315,6 +287,6 @@
         ]
       }
     },
-    "timestamp": 1617419984
+    "timestamp": 1617652287
   }
 }
