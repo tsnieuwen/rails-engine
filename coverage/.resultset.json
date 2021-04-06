@@ -209,9 +209,9 @@
           1,
           1,
           1,
-          9,
-          9,
-          9,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -223,7 +223,7 @@
           1,
           1,
           1,
-          12,
+          1,
           null,
           null,
           null
@@ -241,32 +241,14 @@
           1,
           null,
           1,
-          1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/item.rb": {
-        "lines": [
           1,
           null,
           1,
           1,
-          1,
           null,
-          null
-        ]
-      },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
+          null,
+          null,
           null
         ]
       },
@@ -287,67 +269,28 @@
           null
         ]
       },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/items_controller.rb": {
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          null,
           1,
-          null,
-          1,
-          null,
-          null,
           1,
           1,
           null,
           null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
           null,
           null,
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          0,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          0,
-          0,
-          null,
-          0,
           null,
           null
         ]
@@ -355,28 +298,6 @@
       "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/serializers/item_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/items_merchant_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
           null
         ]
       },
@@ -390,6 +311,6 @@
         ]
       }
     },
-    "timestamp": 1617675909
+    "timestamp": 1617738913
   }
 }
