@@ -59,15 +59,24 @@ describe "Merchants API" do
   #
     merchant = JSON.parse(response.body, symbolize_names: true)
     expect(response).to be_successful
-  #
-  #   expect(merchant).to have_key(:id)
-  #   expect(merchant[:id]).to eq(id)
-  #   expect(merchant).to have_key(:name)
-  #   expect(merchant[:name]).to be_a(String)
-
-    # expect(merchant[:data][:attributes]).to have_key(:id)
-    # expect(merchant[:data][:attributes][:id]).to eq(id)
     expect(merchant[:data][:attributes]).to have_key(:name)
     expect(merchant[:data][:attributes][:name]).to be_a(String)
+  end
+
+  it "returns the merchants items" do
+    merchant1_id = create(:merchant).id
+    merchant2_id = create(:merchant).id
+    item1 = FactoryBot.create(:item, merchant_id: merchant1_id)
+    item2 = FactoryBot.create(:item, merchant_id: merchant1_id)
+    get "/api/v1/merchants/#{merchant1_id}/items"
+    expect(response).to be_successful
+    items = JSON.parse(response.body, symbolize_names: true)
+    expect(items[:data].count).to eq(2)
+    expect(items[:data].first[:attributes][:merchant_id]).to eq(merchant1_id)
+    expect(items[:data].first[:attributes][:merchant_id]).to_not eq(merchant2_id)
+    expect(items[:data].second[:attributes][:merchant_id]).to eq(merchant1_id)
+    expect(items[:data].second[:attributes][:merchant_id]).to_not eq(merchant2_id)
+
+
   end
 end
