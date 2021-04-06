@@ -9,15 +9,15 @@ describe "Items API" do
     expect(response).to be_successful
 
     items = JSON.parse(response.body)
-    items.each do |item|
-      expect(item).to have_key('id')
-      expect(item['id']).to be_a(Integer)
-      expect(item).to have_key('name')
-      expect(item['name']).to be_a(String)
-      expect(item).to have_key('description')
-      expect(item['description']).to be_a(String)
-      expect(item).to have_key('unit_price')
-      expect(item['unit_price']).to be_a(Float)
+    items["data"].each do |item|
+      expect(item["attributes"]).to have_key('name')
+      expect(item["attributes"]["name"]).to be_a(String)
+      expect(item["attributes"]).to have_key('description')
+      expect(item["attributes"]["description"]).to be_a(String)
+      expect(item["attributes"]).to have_key('unit_price')
+      expect(item["attributes"]["unit_price"]).to be_a(Float)
+      expect(item["attributes"]).to have_key('merchant_id')
+      expect(item["attributes"]["merchant_id"]).to be_a(Integer)
     end
   end
 
@@ -30,20 +30,18 @@ describe "Items API" do
 
     expect(response).to be_successful
 
-    expect(item).to have_key(:id)
-    expect(item[:id]).to eq(id)
+    expect(item[:data][:attributes]).to have_key(:name)
+    expect(item[:data][:attributes][:name]).to be_a(String)
 
-    expect(item).to have_key(:name)
-    expect(item[:name]).to be_a(String)
+    expect(item[:data][:attributes]).to have_key(:description)
+    expect(item[:data][:attributes][:description]).to be_a(String)
 
-    expect(item).to have_key(:description)
-    expect(item[:description]).to be_a(String)
+    expect(item[:data][:attributes]).to have_key(:unit_price)
+    expect(item[:data][:attributes][:unit_price]).to be_a(Float)
 
-    expect(item).to have_key(:unit_price)
-    expect(item[:unit_price]).to be_a(Float)
+    expect(item[:data][:attributes]).to have_key(:merchant_id)
+    expect(item[:data][:attributes][:merchant_id]).to be_a(Integer)
 
-    expect(item).to have_key(:merchant_id)
-    expect(item[:merchant_id]).to be_a(Integer)
   end
 
   it "can create a new item" do
@@ -101,6 +99,17 @@ describe "Items API" do
     expect(response).to be_successful
     expect(Item.count).to eq(0)
     expect{Item.find(item.id)}.to raise_error(ActiveRecord::RecordNotFound)
+  end
+
+  it "returns the items merchant" do
+    merchant1 = create(:merchant)
+    merchant2 = create(:merchant)
+    item1 = FactoryBot.create(:item, merchant_id: merchant1.id)
+    get "/api/v1/items/#{item1.id}/merchant"
+    expect(response).to be_successful
+    merchant = JSON.parse(response.body, symbolize_names: true)
+    expect(merchant[:data][:id].to_i).to eq(merchant1.id)
+
   end
 
 end

@@ -76,7 +76,5 @@ describe "Merchants API" do
     expect(items[:data].first[:attributes][:merchant_id]).to_not eq(merchant2_id)
     expect(items[:data].second[:attributes][:merchant_id]).to eq(merchant1_id)
     expect(items[:data].second[:attributes][:merchant_id]).to_not eq(merchant2_id)
-
-
   end
 end
