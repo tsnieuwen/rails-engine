@@ -223,7 +223,7 @@
           1,
           1,
           1,
-          1,
+          6,
           null,
           null,
           null
@@ -237,7 +237,6 @@
           1,
           1,
           1,
-          null,
           1,
           null,
           1,
@@ -245,6 +244,7 @@
           1,
           null,
           1,
+          null,
           1,
           null,
           null,
@@ -276,18 +276,46 @@
           null
         ]
       },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": {
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/models/item.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/controllers/api/v1/items/search_controller.rb": {
+        "lines": [
           1,
           null,
+          1,
+          5,
+          null,
+          2,
+          null,
+          3,
+          null,
+          5,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          3,
+          null,
+          2,
           null,
           null,
           null,
+          1,
+          5,
+          3,
+          null,
+          2,
           null,
           null,
           null,
@@ -301,16 +329,15 @@
           null
         ]
       },
-      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/serializers/merchant_serializer.rb": {
+      "/Users/thomasnieuwenhuis/Desktop/Documents/Turing Docs/mod_3/week1/rails_engine/rails-engine/app/serializers/item_serializer.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1617738913
+    "timestamp": 1617753818
   }
 }

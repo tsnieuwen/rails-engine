@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-06T13:55:13-06:00">2021-04-06T13:55:13-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-06T18:03:38-06:00">2021-04-06T18:03:38-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.01
+         1.36
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>19</b> files in total.
+    <b>20</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>73</b> relevant lines,
-    <span class="green"><b>73</b> lines covered</span> and
+    <b>87</b> relevant lines,
+    <span class="green"><b>87</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,13 +71,13 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#acc36979391a32fa6ab4a63138721a90a981e082" class="src_link" title="app/controllers/api/v1/merchants/search_controller.rb">app/controllers/api/v1/merchants/search_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#032108ca07c03985392a7770bcffb3634f9caef8" class="src_link" title="app/controllers/api/v1/items/search_controller.rb">app/controllers/api/v1/items/search_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">32</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">2.67</td>
             
           </tr>
         
@@ -104,6 +104,17 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#b5c3b4acc95d2d63a4e224cfc112a2ce00bc05dc" class="src_link" title="app/models/item.rb">app/models/item.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#0e54ef05c35cc346e2e721049d983b107ab7d1e8" class="src_link" title="app/models/merchant.rb">app/models/merchant.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">13</td>
@@ -115,9 +126,9 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#0ab3c00be99ba5b1f2cc17bc91bc19b1d827f8d8" class="src_link" title="app/serializers/merchant_serializer.rb">app/serializers/merchant_serializer.rb</a></td>
+            <td class="strong t-file__name"><a href="#993e7ff93657dc9139ecb8facd77b8b2cc445e46" class="src_link" title="app/serializers/item_serializer.rb">app/serializers/item_serializer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
@@ -275,7 +286,7 @@
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">2.25</td>
             
           </tr>
         
@@ -296,9 +307,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="acc36979391a32fa6ab4a63138721a90a981e082">
+        <div class="source_table" id="032108ca07c03985392a7770bcffb3634f9caef8">
   <div class="header">
-    <h3>app/controllers/api/v1/merchants/search_controller.rb</h3>
+    <h3>app/controllers/api/v1/items/search_controller.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -310,8 +321,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>15</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -329,7 +340,7 @@
 
             
 
-            <code class="ruby">class Api::V1::Merchants::SearchController &lt; ApplicationController</code>
+            <code class="ruby">class Api::V1::Items::SearchController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -356,35 +367,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
             
 
             
 
-            <code class="ruby">    merchant = Merchant.where(&quot;name LIKE ?&quot;, &quot;%#{params[:name]}%&quot;).order(name: :asc).limit(1).first</code>
+            <code class="ruby">    if params[:name]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="5">
+            
             
 
             
 
-            <code class="ruby">    require &quot;pry&quot;; binding.pry</code>
+            <code class="ruby">      # items = (Item.where(&quot;description ILIKE ?&quot;, &quot;%#{params[:name].downcase}%&quot;).or(Item.where(&quot;name ILIKE ?&quot;, &quot;%#{params[:name].downcase}%&quot;))).where(&quot;unit_price &gt;= ?&quot;, minimum).where(&quot;unit_price &lt;= ?&quot;, maximum)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    @serial = MerchantSerializer.new(merchant)</code>
+            <code class="ruby">      items = (Item.where(&quot;name ILIKE ?&quot;, &quot;%#{params[:name].downcase}%&quot;)).where(&quot;unit_price &gt;= ?&quot;, minimum).where(&quot;unit_price &lt;= ?&quot;, maximum)</code>
           </li>
         </div>
       
@@ -395,18 +406,18 @@
 
             
 
-            <code class="ruby">    render json: @serial</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="8">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">      items = Item.where(&quot;unit_price &gt;= ?&quot;, minimum).where(&quot;unit_price &lt;= ?&quot;, maximum)</code>
           </li>
         </div>
       
@@ -417,18 +428,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="5" data-linenumber="10">
+            <span class="hits">5</span>
             
 
-            <code class="ruby">  # def index</code>
+            
+
+            <code class="ruby">    render json: ItemSerializer.new(items)</code>
           </li>
         </div>
       
@@ -439,7 +450,7 @@
 
             
 
-            <code class="ruby">  #   merchant = Merchant.order(name: :asc).find_by(&quot;name LIKE ?&quot;, &quot;%#{params[:name]}%&quot;)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -450,18 +461,18 @@
 
             
 
-            <code class="ruby">  #   render json: MerchantSerializer.new(merchant)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # end</code>
+            
+
+            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -477,7 +488,84 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def maximum</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="16">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    if params[:maximum]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="17">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      params[:maximum].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="19">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      Item.maximum(:unit_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -488,7 +576,106 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def minimum</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="24">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    if params[:minimum]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="25">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      params[:minimum].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="27">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      Item.minimum(:unit_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
@@ -606,6 +793,114 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b5c3b4acc95d2d63a4e224cfc112a2ce00bc05dc">
+  <div class="header">
+    <h3>app/models/item.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Item &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :invoice_items</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :invoices, through: :invoice_items</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :merchant</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -794,9 +1089,9 @@
 </div>
 
       
-        <div class="source_table" id="0ab3c00be99ba5b1f2cc17bc91bc19b1d827f8d8">
+        <div class="source_table" id="993e7ff93657dc9139ecb8facd77b8b2cc445e46">
   <div class="header">
-    <h3>app/serializers/merchant_serializer.rb</h3>
+    <h3>app/serializers/item_serializer.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -827,7 +1122,7 @@
 
             
 
-            <code class="ruby">class MerchantSerializer</code>
+            <code class="ruby">class ItemSerializer</code>
           </li>
         </div>
       
@@ -849,23 +1144,12 @@
 
             
 
-            <code class="ruby">  attributes :name</code>
+            <code class="ruby">  attributes :name, :description, :unit_price, :merchant_id</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -3063,7 +3347,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &quot;/items/find_all&quot;, to: &#39;items/search#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -3074,7 +3369,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
@@ -3085,7 +3380,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -3096,7 +3391,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="11">
             <span class="hits">1</span>
             
 
@@ -3107,7 +3402,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -3118,7 +3413,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="13">
             <span class="hits">1</span>
             
 
@@ -3129,7 +3424,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -3140,24 +3435,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      get &quot;/items/:id/merchant&quot;, to: &#39;items_merchant#index&#39;</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      get &quot;/items/find_all&quot;, to: &#39;items_search#index&#39;</code>
+            <code class="ruby">      get &quot;/items/:id/merchant&quot;, to: &#39;items_merchant#index&#39;</code>
           </li>
         </div>
       
@@ -3411,8 +3695,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="6" data-linenumber="4">
+            <span class="hits">6</span>
             
 
             
