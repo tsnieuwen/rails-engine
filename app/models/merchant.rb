@@ -10,4 +10,35 @@ class Merchant < ApplicationRecord
   #   page = (page || 1).to_i
   #   current_scope = limit(per_page).offset((page - 1) * per_page)
   # }
+
+  def revenue
+    transactions
+    .where("transactions.result = 'success'")
+    .where("invoices.status = 'shipped'")
+    .pluck("sum(invoice_items.quantity * invoice_items.unit_price) AS total")
+    .first
+    .round(2)
+  end
+
+
+  def self.top_merchants_revenue(num_merchants)
+    joins(:transactions)
+    .where("transactions.result = 'success'")
+    .where("invoices.status = 'shipped'")
+    .select("merchants.id, sum(invoice_items.quantity * invoice_items.unit_price)")
+    .group("merchants.id")
+    .order(sum: :desc)
+    .limit(num_merchants)
+  end
+
+  def self.top_merchants_items(num_merchants)
+    joins(:transactions)
+    .where("transactions.result = 'success'")
+    .where("invoices.status = 'shipped'")
+    .select("merchants.id, sum(invoice_items.quantity)")
+    .group("merchants.id")
+    .order(sum: :desc)
+    .limit(num_merchants)
+  end
+
 end
