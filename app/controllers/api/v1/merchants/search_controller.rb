@@ -2,7 +2,11 @@ class Api::V1::Merchants::SearchController < ApplicationController
 
   def index
     merchant = Merchant.where("name ILIKE ?", "%#{params[:name].downcase}%").order(name: :asc).limit(1).first
-    render json: MerchantSerializer.new(merchant)
+    if merchant.class == Merchant
+      render json: MerchantSerializer.new(merchant)
+    else
+      render json: {data: { error: "Your search could not be completed because you did not pass in a valid query parameter"}}, status: 404
+    end
   end
 
   def most_items
