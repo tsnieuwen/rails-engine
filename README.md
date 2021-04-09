@@ -47,7 +47,7 @@ Rails Engine is a project that exposes the data that powers a mock E-Commerce Ap
 
 5. `http://localhost:3000/api/v1/items/{{item_id}}`
 
-  - `GET` Get one item: Returns an individual item record, based on the item's database id.
+    - `GET` Get one item: Returns an individual item record, based on the item's database id.
 
 
 6. `http://localhost:3000/api/v1/items`
