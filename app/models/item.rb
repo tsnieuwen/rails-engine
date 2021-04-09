@@ -17,7 +17,7 @@ class Item < ApplicationRecord
 
   def delete_invoices
     self.invoices.map do |invoice|
-      if invoice.invoice_items.all? {invoice_item.item_id == self.id}
+      if invoice.invoice_items.all? { |invoice_item| invoice_item.item_id == self.id}
         invoice.destroy
       end
     end
