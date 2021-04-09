@@ -3,12 +3,13 @@ class Api::V1::ItemsController < ApplicationController
   def index
 
     items = Item.limit(per_page.to_i).offset(page_offset)
-
     render json: ItemSerializer.new(items)
+
   end
 
   def show
-    render json: ItemSerializer.new(Item.find(params[:id]))
+    item = Item.find(params[:id])
+    render json: ItemSerializer.new(item)
   end
 
   def create
@@ -44,16 +45,6 @@ class Api::V1::ItemsController < ApplicationController
       params.require(:item).permit(:name, :description, :unit_price, :merchant_id)
     end
 end
-
-# def index
-#   merchants = Merchant.limit(per_page.to_i).offset(page_offset)
-#
-#   render json: MerchantSerializer.new(merchants)
-# end
-
-# def show
-#   render json: MerchantSerializer.new(Merchant.find(params[:id]))
-# end
 
 private
 
