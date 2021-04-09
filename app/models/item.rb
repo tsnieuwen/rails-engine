@@ -15,4 +15,12 @@ class Item < ApplicationRecord
     .limit(num_items)
   end
 
+  def delete_invoices
+    self.invoices.map do |invoice|
+      if invoice.invoice_items.all? { |invoice_item| invoice_item.item_id == self.id}
+        invoice.destroy
+      end
+    end
+  end
+
 end
